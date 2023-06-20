@@ -20,4 +20,8 @@ describe("likes", () => {
       "Alex, Jacob and 2 others like this"
     );
   });
+
+  it("returns the a statement if the array is empty", () => {
+    expect(likes([])).toEqual("no one likes this");
+  });
 });
