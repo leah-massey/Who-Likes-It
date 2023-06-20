@@ -24,4 +24,8 @@ describe("likes", () => {
   it("returns the a statement if the array is empty", () => {
     expect(likes([])).toEqual("no one likes this");
   });
+
+  it("throws error", () => {
+    expect(() => likes("peter")).toThrow("Input not in correct format.");
+  });
 });

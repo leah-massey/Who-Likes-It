@@ -1,4 +1,8 @@
 const likes = function (names) {
+  if (!Array.isArray(names)) {
+    throw new Error("Input not in correct format.");
+  }
+
   if (names.length === 0) {
     return "no one likes this";
   } else if (names.length === 1) {
