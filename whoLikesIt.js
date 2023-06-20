@@ -1,5 +1,5 @@
 const likes = function (names) {
-  return "Peter likes this";
+  return `${names} likes this`;
 };
 
 module.exports = likes;
