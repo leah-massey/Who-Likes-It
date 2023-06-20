@@ -14,4 +14,10 @@ describe("likes", () => {
       "Max, John and Mark like this"
     );
   });
+
+  it("returns the correct result when more than 4 names are inputted", () => {
+    expect(likes(["Alex", "Jacob", "Mark", "Max"])).toEqual(
+      "Alex, Jacob and 2 others like this"
+    );
+  });
 });
